@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Eunstagram">
+        <!-- 모든 액티비티는 manifest에 추가해주어야 실행 시 충돌이 나지 않음 -->
         <activity
             android:name=".HomeActivity"
             android:exported="true">
@@ -18,6 +19,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".LikesActivity"></activity>
+        <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".SearchActivity"></activity>
+        <activity android:name=".ShareActivity"></activity>
+
     </application>
 
 </manifest>
