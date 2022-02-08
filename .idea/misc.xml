@@ -12,6 +12,7 @@
         <entry key="app/src/main/res/drawable/white_grey_border_top.xml" value="1.0" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.259963768115942" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.15806159420289856" />
+        <entry key="app/src/main/res/layout/bottom_nav_color.xml" value="0.2833333333333333" />
         <entry key="app/src/main/res/layout/layout_bottom_navigation_view.xml" value="0.19635416666666666" />
         <entry key="app/src/main/res/layout/layout_center_viewpager.xml" value="0.19635416666666666" />
         <entry key="app/src/main/res/layout/layout_top_tabs.xml" value="0.19635416666666666" />
