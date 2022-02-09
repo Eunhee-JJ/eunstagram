@@ -1,7 +1,5 @@
 package com.example.eunstagram.Utils;
 
-import static android.os.Build.VERSION_CODES.R;
-
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
@@ -9,13 +7,12 @@ import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
 
-import com.example.eunstagram.HomeActivity;
-import com.example.eunstagram.LikesActivity;
-import com.example.eunstagram.ProfileActivity;
-import com.example.eunstagram.R;
+import com.example.eunstagram.Home.HomeActivity;
+import com.example.eunstagram.Likes.LikesActivity;
+import com.example.eunstagram.Profile.ProfileActivity;
 import com.example.eunstagram.R.id;
-import com.example.eunstagram.SearchActivity;
-import com.example.eunstagram.ShareActivity;
+import com.example.eunstagram.Search.SearchActivity;
+import com.example.eunstagram.Share.ShareActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 

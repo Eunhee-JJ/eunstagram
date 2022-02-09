@@ -1,4 +1,4 @@
-package com.example.eunstagram;
+package com.example.eunstagram.Profile;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -9,13 +9,16 @@ import android.view.MenuItem;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.eunstagram.R;
 import com.example.eunstagram.Utils.BottomNavigationViewHelper;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
-public class LikesActivity extends AppCompatActivity { // 안드로이드 3.0 이하 버전에도 actionbar, 다크모드, DrawerLayout 통합 등을 지원하는 activity의 일
-    private static final String TAG = "LikesActivity";
-    private static final int ACTIVITY_NUM = 3;
-    private Context mContext = LikesActivity.this;
+public class ProfileActivity extends AppCompatActivity { // 안드로이드 3.0 이하 버전에도 actionbar, 다크모드, DrawerLayout 통합 등을 지원하는 activity의 일
+    private static final String TAG = "ProfileActivity";
+    private static final int ACTIVITY_NUM = 4;
+
+
+    private Context mContext = ProfileActivity.this;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
