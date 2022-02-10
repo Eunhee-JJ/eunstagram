@@ -35,14 +35,18 @@ public class HomeActivity extends AppCompatActivity {
      */
     private void setupViewPager(){
         SectionPagerAdapter adapter = new SectionPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new CameraFragment());
-        adapter.addFragment(new HomeFragment());
-        adapter.addFragment(new MessagesFragment());
+        adapter.addFragment(new CameraFragment()); //index 0
+        adapter.addFragment(new HomeFragment()); //index 1
+        adapter.addFragment(new MessagesFragment()); //index 2
         ViewPager viewPager = (ViewPager) findViewById(R.id.container);
         viewPager.setAdapter(adapter);
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
+
+        tabLayout.getTabAt(0).setIcon(R.drawable.ic_camera);
+        tabLayout.getTabAt(1).setIcon(R.drawable.ic_action_name);
+        tabLayout.getTabAt(2).setIcon(R.drawable.ic_arrow);
     }
 
     /**
