@@ -27,7 +27,7 @@ public class ProfileActivity extends AppCompatActivity { // 안드로이드 3.0 
         setContentView(R.layout.activity_profile);
         Log.d(TAG, "onCreate: stated.");
 
-        //setupBottomNavigationView();
+        setupBottomNavigationView();
         setupToolbar();
     }
 
@@ -60,7 +60,7 @@ public class ProfileActivity extends AppCompatActivity { // 안드로이드 3.0 
         menuItem.setChecked(true);
     }
 
-    // 중요 - 이거 안 해주면 작동 안 함
+    // 중요 - 이거 안 해주면 메뉴 작동 안 함
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.profile_menu, menu);
