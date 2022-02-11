@@ -39,8 +39,12 @@ dependencies {
     // Design Library for Coordinator Layout and Toolbars
     //noinspection GradleCompatible
     implementation 'com.android.support:design:28.0.0'
+
     // BottomNavigationViewEx library
     implementation 'com.github.ittianyu:BottomNavigationViewEx:2.0.4'
+
+    // circleImageview
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
 
 
 }
