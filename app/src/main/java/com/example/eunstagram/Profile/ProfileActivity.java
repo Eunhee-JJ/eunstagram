@@ -1,10 +1,13 @@
 package com.example.eunstagram.Profile;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -35,16 +38,13 @@ public class ProfileActivity extends AppCompatActivity { // 안드로이드 3.0 
         androidx.appcompat.widget.Toolbar toolbar = (androidx.appcompat.widget.Toolbar) findViewById(R.id.profileToolbar);
         setSupportActionBar(toolbar);
 
-        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
-
+        ImageView profileMenu = (ImageView) findViewById(R.id.profileMenu);
+        profileMenu.setOnClickListener(new View.OnClickListener(){
             @Override
-            public boolean onMenuItemClick(MenuItem item) {
-                Log.d(TAG, "onMenuItemClick: clicked menu item: " + item);
-                switch (item.getItemId()){
-                    case R.id.profileMenu:
-                        Log.d(TAG, "onMenuItemClick: Navigating to Profile Preferences.");
-                }
-                return false;
+            public void onClick(View v) {
+                Log.d(TAG, "onClick: navigating to account settings.");
+                Intent intent = new Intent(mContext, AccountSettingsActivity.class);
+                startActivity(intent);
             }
         });
     }
@@ -60,10 +60,5 @@ public class ProfileActivity extends AppCompatActivity { // 안드로이드 3.0 
         menuItem.setChecked(true);
     }
 
-    // 중요 - 이거 안 해주면 메뉴 작동 안 함
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.profile_menu, menu);
-        return true;
-    }
+
 }
